@@ -1,8 +1,15 @@
 @import "tailwindcss";
-
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #6366f1;
+  --primary-light: #818cf8;
+  --secondary: #f43f5e;
+  --gray-light: #f9fafb;
+  --gray: #e5e7eb;
 }
 
 @theme inline {
@@ -16,11 +23,16 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --primary: #818cf8;
+    --primary-light: #a5b4fc;
+    --secondary: #fb7185;
+    --gray-light: #1f2937;
+    --gray: #374151;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans, Arial, Helvetica, sans-serif);
 }
