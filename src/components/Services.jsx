@@ -86,12 +86,18 @@ const Services = () => {
         "Boost your online visibility and drive targeted traffic with data-driven SEO strategies and comprehensive digital marketing campaigns.",
       icon: "📈",
     },
+    {
+      title: "DevOps, Cloud Services & SecOps",
+      description:
+        "Optimize deployment workflows, leverage scalable cloud infrastructure, and implement robust security operations to enhance application reliability, performance and safety.",
+      icon: "☁️",
+    },
   ];
 
   return (
     <section
       id="services"
-      className="relative py-10 md:py-20 overflow-hidden"
+      className="relative py-10 md:py-20 overflow-x-hidden"
       ref={sectionRef}
     >
       {/* Decorative elements */}

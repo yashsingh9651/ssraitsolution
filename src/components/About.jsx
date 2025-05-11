@@ -216,12 +216,12 @@ const About = () => {
               transition={{ duration: 0.7, delay: 0.8 }}
             >
               <AnimatedCounter
-                value={200}
+                value={20}
                 title="Projects Completed"
                 icon="🚀"
               />
-              <AnimatedCounter value={50} title="Happy Clients" icon="😊" />
-              <AnimatedCounter value={15} title="Business Partners" icon="🤝" />
+              <AnimatedCounter value={12} title="Happy Clients" icon="😊" />
+              <AnimatedCounter value={8} title="Business Partners" icon="🤝" />
             </motion.div>
 
             <motion.div

@@ -147,47 +147,9 @@ const Contact = () => {
   return (
     <section 
       id="contact" 
-      className="relative py-20 min-h-screen overflow-hidden"
+      className="relative py-20 min-h-screen overflow-x-hidden"
       ref={sectionRef}
     >
-      {/* Background Pattern - animated gradient mesh */}
-      <div className="absolute inset-0 z-0">
-        <motion.div
-          className="absolute inset-0 opacity-10"
-          style={{
-            background:
-              "radial-gradient(circle at 70% 50%, var(--primary) 0%, transparent 50%)",
-            filter: "blur(60px)",
-          }}
-          animate={{
-            scale: [1, 1.1, 1],
-            opacity: [0.1, 0.15, 0.1],
-          }}
-          transition={{
-            duration: 8,
-            repeat: Infinity,
-            repeatType: "reverse",
-          }}
-        />
-        <motion.div
-          className="absolute inset-0 opacity-10"
-          style={{
-            background:
-              "radial-gradient(circle at 30% 80%, var(--secondary) 0%, transparent 40%)",
-            filter: "blur(60px)",
-          }}
-          animate={{
-            scale: [1, 1.15, 1],
-            opacity: [0.1, 0.15, 0.1],
-          }}
-          transition={{
-            duration: 10,
-            repeat: Infinity,
-            repeatType: "reverse",
-          }}
-        />
-      </div>
-
       {/* Decorative elements */}
       <motion.div
         className="absolute left-0 top-1/3 w-20 h-20 rounded-full opacity-10 z-0"
@@ -290,21 +252,21 @@ const Contact = () => {
               <ContactInfoItem
                 icon={<Phone size={24} style={{ color: "var(--primary)" }} />}
                 title="Phone"
-                content="+1 (555) 123-4567"
+                content="+91 7428961025"
                 delay={0.3}
               />
               
               <ContactInfoItem
                 icon={<Mail size={24} style={{ color: "var(--primary)" }} />}
                 title="Email"
-                content="hello@yourcompany.com"
+                content="santmax2010@gmail.com"
                 delay={0.4}
               />
               
               <ContactInfoItem
                 icon={<MapPin size={24} style={{ color: "var(--primary)" }} />}
                 title="Office"
-                content="123 Innovation Drive, Tech City, CA 94107"
+                content="Greater Noida, India"
                 delay={0.5}
               />
             </div>
